@@ -55,11 +55,13 @@
     enableCompletion = true;
     bashrcExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
-      xrandr --output HDMI-1 --primary
     '';
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
+      nixos-update = "sudo nixos-rebuild switch";
+      nixos-clean = "sudo nix-collect-garbage -d";
+      docker-compose = "docker compose";
     };
   };
 
