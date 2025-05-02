@@ -123,6 +123,9 @@
 
   nix.settings.auto-optimise-store = true;
 
+  # Hyprland
+  programs.hyprland.enable = true;
+
   environment.systemPackages = with pkgs; [
     vscode
     git
@@ -132,6 +135,20 @@
     pciutils
     nodejs_20
     git-credential-manager
+    python3
+
+    # Hyprland packages
+    kitty
+    waybar
+    rofi
+    dunst
+    swaybg
+    swaylock-fancy
+    swayidle
+    pamixer
+    light
+    brillo
+    font-awesome
   ];
 
   programs.amnezia-vpn.enable = true;
