@@ -28,7 +28,7 @@
     vesktop
     podman-desktop
     podman-compose
-    #jetbrains.webstorm
+    jetbrains.webstorm
     gparted
     pnpm
     (pkgs.callPackage ../pkgs/youtube-music { })
