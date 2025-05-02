@@ -32,6 +32,7 @@
     gparted
     pnpm
     (pkgs.callPackage ../pkgs/youtube-music { })
+    (pkgs.callPackage ../pkgs/tlauncher { })
   ];
 
   programs.fastfetch.settings = {
