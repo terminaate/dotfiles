@@ -31,6 +31,7 @@
     #jetbrains.webstorm
     gparted
     pnpm
+    (pkgs.callPackage ../pkgs/youtube-music { })
   ];
 
   programs.fastfetch.settings = {
