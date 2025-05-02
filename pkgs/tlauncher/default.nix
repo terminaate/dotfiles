@@ -95,7 +95,7 @@ stdenv.mkDerivation {
     (makeDesktopItem {
       name = "com.terminaate.tlauncher";
       exec = "tlauncher %u";
-      icon = "tlauncher";
+      icon = ./icon.png;
       desktopName = "TLauncher";
       startupWMClass = "com.terminaate.tlauncher";
       categories = [ "Game" ];
