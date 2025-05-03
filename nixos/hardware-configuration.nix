@@ -38,14 +38,6 @@
     ];
   };
 
-  fileSystems."/mnt/terminaate-drive" = {
-    device = "/dev/disk/by-uuid/01DBBB185DDD3930";
-    fsType = "ntfs-3g";
-    options = [
-      "rw"
-      "uid=1000"
-    ];
-  };
 
   swapDevices = [ ];
 
