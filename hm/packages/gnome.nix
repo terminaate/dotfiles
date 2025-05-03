@@ -6,5 +6,6 @@
     gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.appindicator
+    gnomeExtensions.gsconnect
   ];
 }
