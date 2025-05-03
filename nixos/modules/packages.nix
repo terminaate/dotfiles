@@ -10,6 +10,14 @@
     pciutils
     nodejs_20
     python3
+    lshw
+
+    # Gaming
+    # angohud
+    protonup-qt
+    lutris
+    bottles
+    heroic
 
     # Hyprland packages
     kitty

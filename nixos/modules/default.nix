@@ -9,5 +9,7 @@
     ./sound.nix
     ./user.nix
     ./vpn.nix
+    ./steam.nix
+    ./gpu.nix
   ];
 }
