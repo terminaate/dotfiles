@@ -3,6 +3,7 @@
 {
   programs.git = {
     enable = true;
+    lfs.enable = true;
     userName = "terminaate";
     userEmail = "terminaatecorp@gmail.com";
     extraConfig.credential.helper = "manager";
