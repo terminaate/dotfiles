@@ -6,5 +6,7 @@
     tree
     nix-output-monitor
     glow
+    git-lfs
+    git-credential-manager
   ];
 }

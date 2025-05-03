@@ -9,7 +9,6 @@
     htop
     pciutils
     nodejs_20
-    git-credential-manager
     python3
 
     # Hyprland packages
