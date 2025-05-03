@@ -11,6 +11,7 @@
     nodejs_20
     python3
     lshw
+    ntfs3g
 
     # Gaming
     # angohud
