@@ -2,6 +2,12 @@
 
 {
   home.packages = with pkgs; [
+    rustc
+    gcc
+    alsa-lib
+    vala
+    zlib
+
     pkg-config
     gobject-introspection
     cargo
@@ -13,6 +19,7 @@
     gdk-pixbuf
     glib
     gtk3
+    gtk4
     harfbuzz
     # librsvg
     libsoup_3
