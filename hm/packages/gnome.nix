@@ -8,4 +8,5 @@
     gnomeExtensions.appindicator
     gnomeExtensions.gsconnect
   ];
+
 }
