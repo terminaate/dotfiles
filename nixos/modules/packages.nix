@@ -12,6 +12,7 @@
     python3
     lshw
     ntfs3g
+    nil
 
     # Gaming
     # angohud

@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ config, ... }:
 
 {
   hardware.graphics = {
@@ -7,8 +7,6 @@
   };
 
   services.xserver.videoDrivers = [ "nvidia" ];
-
-  hardware.opengl.enable = true;
 
   hardware.nvidia = {
 

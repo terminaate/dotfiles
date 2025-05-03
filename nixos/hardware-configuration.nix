@@ -4,7 +4,6 @@
 {
   config,
   lib,
-  pkgs,
   modulesPath,
   ...
 }:
@@ -37,7 +36,6 @@
       "dmask=0077"
     ];
   };
-
 
   swapDevices = [ ];
 

@@ -2,9 +2,8 @@
   lib,
   stdenv,
   openjdk8,
-  buildFHSUserEnv,
+  buildFHSEnv,
   fetchzip,
-  fetchurl,
   copyDesktopItems,
   makeDesktopItem,
 }:
@@ -23,7 +22,7 @@ let
       cp $src/*.jar $out
     '';
   };
-  fhs = buildFHSUserEnv {
+  fhs = buildFHSEnv {
     name = "tlauncher";
     runScript = ''
       ${openjdk8}/bin/java -jar "${src}" "$@"
