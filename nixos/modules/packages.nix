@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  # TODO: modularize these packages
   environment.systemPackages = with pkgs; [
     vscode
     git
