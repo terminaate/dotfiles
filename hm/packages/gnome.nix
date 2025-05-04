@@ -7,6 +7,7 @@
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.appindicator
     gnomeExtensions.gsconnect
+    gnomeExtensions.dash-to-dock
   ];
 
 }
