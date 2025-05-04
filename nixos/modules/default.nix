@@ -10,7 +10,7 @@
     ./user.nix
     ./vpn.nix
     ./steam.nix
-    # ./gpu.nix
+    ./gpu.nix
     ./kdeconnect.nix
   ];
 }
