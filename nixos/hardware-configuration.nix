@@ -4,6 +4,7 @@
 {
   config,
   lib,
+  pkgs,
   modulesPath,
   ...
 }:
@@ -34,6 +35,15 @@
     options = [
       "fmask=0077"
       "dmask=0077"
+    ];
+  };
+
+  fileSystems."/mnt/terminaate-drive" = {
+    device = "/dev/disk/by-uuid/01DBBB185DDD3930";
+    fsType = "ntfs-3g";
+    options = [
+      "rw"
+      "uid=1000"
     ];
   };
 
