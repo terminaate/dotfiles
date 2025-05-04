@@ -47,6 +47,14 @@
     # };
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
+
+  boot.kernelParams = [ "nvidia_drm.modeset=1" ];
+  boot.initrd.kernelModules = [
+    "nvidia"
+    "nvidia_modeset"
+    "nvidia_drm"
+    "nvidia_uvm"
+  ];
 }

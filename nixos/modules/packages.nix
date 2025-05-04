@@ -13,6 +13,7 @@
     lshw
     ntfs3g
     nil
+    gpu-viewer
 
     # Gaming
     # angohud

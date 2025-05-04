@@ -4,7 +4,6 @@
 {
   config,
   lib,
-  pkgs,
   modulesPath,
   ...
 }:
@@ -30,7 +29,7 @@
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/E630-DDE1";
+    device = "/dev/disk/by-uuid/8F77-3FE2";
     fsType = "vfat";
     options = [
       "fmask=0077"
