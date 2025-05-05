@@ -6,7 +6,11 @@
     enable32Bit = true;
   };
 
-  services.xserver.videoDrivers = [ "nvidia" "modesetting" "displaylink" ];
+  services.xserver.videoDrivers = [
+    "nvidia"
+    "modesetting"
+    "displaylink"
+  ];
 
   hardware.nvidia = {
 
