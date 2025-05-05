@@ -4,8 +4,7 @@
 {
   imports = [
     ./packages
-    ./git.nix
-    ./shell.nix
+    ./modules
   ];
 
   home.username = "terminaate";

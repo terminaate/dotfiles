@@ -6,6 +6,12 @@
     enableCompletion = true;
     bashrcExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
+
+      # JetBrains VM options
+      ___MY_VMOPTIONS_SHELL_FILE="$HOME/.jetbrains.vmoptions.sh"
+      if [ -f "$___MY_VMOPTIONS_SHELL_FILE" ]; then
+        . "$___MY_VMOPTIONS_SHELL_FILE"
+      fi
     '';
     shellAliases = {
       nixos-update = "sudo nixos-rebuild switch";
@@ -36,5 +42,13 @@
       docker-compose = "docker compose";
     };
     history.size = 10000;
+
+    initContent = ''
+      # JetBrains VM options
+      ___MY_VMOPTIONS_SHELL_FILE="$HOME/.jetbrains.vmoptions.sh"
+      if [ -f "$___MY_VMOPTIONS_SHELL_FILE" ]; then
+        . "$___MY_VMOPTIONS_SHELL_FILE"
+      fi
+    '';
   };
 }
