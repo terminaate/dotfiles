@@ -8,5 +8,6 @@
     pkgs.amnezia-vpn
     pkgs.ayugram-desktop
     pkgs.vesktop
+    pkgs.google-chrome
   ];
 }
