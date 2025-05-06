@@ -16,6 +16,7 @@
       christian-kohler.npm-intellisense
       christian-kohler.path-intellisense
       esbenp.prettier-vscode
+      irongeek.vscode-env
     ];
   };
 }
