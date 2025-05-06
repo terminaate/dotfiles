@@ -30,7 +30,6 @@ in
       jnoortheen.nix-ide
       christian-kohler.npm-intellisense
       christian-kohler.path-intellisense
-      eg2.vscode-npm-script
       esbenp.prettier-vscode
     ];
   };
