@@ -13,15 +13,25 @@ let
       };
 
   oldWebstorm = oldPkgs.jetbrains.webstorm;
-
-  jetbra = pkgs.callPackage ../../pkgs/jetbra { };
-
 in
 {
   home.packages = [
     pkgs.pnpm
     pkgs.gparted
     oldWebstorm
-    jetbra
   ];
+
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      dbaeumer.vscode-eslint
+      k--kato.intellij-idea-keybindings
+      bbenoist.nix
+      jnoortheen.nix-ide
+      christian-kohler.npm-intellisense
+      christian-kohler.path-intellisense
+      eg2.vscode-npm-script
+      esbenp.prettier-vscode
+    ];
+  };
 }

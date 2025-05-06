@@ -3,7 +3,6 @@
 {
   # TODO: modularize these packages
   environment.systemPackages = with pkgs; [
-    vscode
     git
     nixfmt-rfc-style
     gnome-tweaks
@@ -16,23 +15,21 @@
     nil
 
     # Gaming
-    # angohud
     protonup-qt
     lutris
     bottles
-    heroic
 
     # Hyprland packages
-    kitty
-    waybar
-    rofi
-    dunst
-    swaybg
-    swaylock-fancy
-    swayidle
-    pamixer
-    light
-    brillo
-    font-awesome
+    # kitty
+    # waybar
+    # rofi
+    # dunst
+    # swaybg
+    # swaylock-fancy
+    # swayidle
+    # pamixer
+    # light
+    # brillo
+    # font-awesome
   ];
 }
