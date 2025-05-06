@@ -6,7 +6,7 @@
     ./dev.nix
     ./gnome.nix
     ./podman.nix
-    ./tauri.nix
+    # ./tauri.nix
     ./apps.nix
   ];
 }
