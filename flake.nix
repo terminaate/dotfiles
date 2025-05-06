@@ -20,6 +20,8 @@
       repo = "home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
   outputs =
@@ -27,6 +29,7 @@
       self,
       nixpkgs,
       home-manager,
+      nixos-hardware,
       ...
     }:
     {
@@ -35,6 +38,8 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./nixos
+          nixos-hardware.nixosModules.lenovo-ideapad-15arh05
+
 
           home-manager.nixosModules.home-manager
           {
