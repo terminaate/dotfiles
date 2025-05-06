@@ -17,6 +17,7 @@
       christian-kohler.path-intellisense
       esbenp.prettier-vscode
       irongeek.vscode-env
+      gruntfuggly.todo-tree
     ];
   };
 }
