@@ -13,6 +13,7 @@
     lshw
     ntfs3g
     nil
+    libuuid
 
     # Gaming
     protonup-qt
@@ -32,4 +33,8 @@
     # brillo
     # font-awesome
   ];
+
+  environment.variables = {
+    LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [ pkgs.libuuid ];
+  };
 }
